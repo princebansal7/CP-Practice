@@ -1,4 +1,4 @@
-# Competitive Programming Practice from Basics 
+# Competitive Programming Practice from Basics
 
 #### There you'll find majorly CodeForces Problems solutions
 
