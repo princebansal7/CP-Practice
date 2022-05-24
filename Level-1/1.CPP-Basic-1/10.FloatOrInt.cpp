@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-    float n;
+    double n;
     cin >> n;
     int val = n;
 
