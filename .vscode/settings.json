@@ -93,4 +93,7 @@
     "editor.tokenColorCustomizations": {
         "comments": "#61615b"
     },
-}
+    "code-runner.executorMap": {
+        "cpp":"cd $dir && g++ -std=c++17 $fileName -o $fileNameWihoutExt && ./$fileNameWihoutExt && rm ./$fileNameWihoutExt",
+    },
+} 
