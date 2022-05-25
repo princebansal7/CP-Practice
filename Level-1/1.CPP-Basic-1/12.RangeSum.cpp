@@ -18,13 +18,22 @@ int main()
 
         ll sum = 0;
 
-        // sum = r * (r + 1) / 2 - l * (l + 1) / 2 + l; // Will Go Out of Range
+        // sum = r * (r + 1) / 2 - l * (l + 1) / 2 + l; // didn't check l,r comparison
 
-        // ll sum = 0;                   // Will Give TLE
+        // ll sum = 0;                   // Will Give TLE due to given range
         // for (int i = l; i <= r; i++)
         //     sum += i;
+        // cout << sum << nl;
 
-        cout << sum << nl;
+        // Accepted
+
+        if (l > r)
+            swap(l, r);
+
+        ll sumL = l * (l + 1) / 2;
+        ll sumR = r * (r + 1) / 2;
+
+        cout << sumR - sumL + l << nl;
     }
     return 0;
 }
