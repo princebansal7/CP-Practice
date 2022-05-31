@@ -11,6 +11,7 @@ int main()
 {
     int year;
     cin >> year;
+    // a little logical question
     while (true) {
         year++;
         int fDigit = year / 1000;
