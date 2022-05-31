@@ -22,7 +22,7 @@ int main()
     // 5^5 = 3125
     // 5^6 = 15625 .....
 
-    cout << 25 << nl; // always => what a stupid question
+    cout << 25 << nl; // always
 
     return 0;
 }
