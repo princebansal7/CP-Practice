@@ -21,7 +21,7 @@ int main()
     }
     int ans = 0;
 
-    // as we need to send 1 at arr[2][2]
+    // as we need to send 1 at arr[2][2] (center position)
     rep(i, 0, 5)
     {
         rep(j, 0, 5)
@@ -36,3 +36,7 @@ int main()
 
     return 0;
 }
+
+// n*m
+// so always need to swap
+// n/2-i row, m/2-j col (where i,j is pos of 1)
