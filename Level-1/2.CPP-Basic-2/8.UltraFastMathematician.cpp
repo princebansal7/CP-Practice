@@ -11,18 +11,16 @@ using namespace std;
 
 int main()
 {
-    string s1, s2, ans;
+    string s1, s2;
     cin >> s1 >> s2;
 
     rep(i, 0, s1.size())
     {
         if (s1[i] != s2[i]) {
-            ans.push_back('1');
+            cout << "1";
         } else {
-            ans.push_back('0');
+            cout << "0";
         }
     }
-    cout << ans << nl;
-
     return 0;
 }
