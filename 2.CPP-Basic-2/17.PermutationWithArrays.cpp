@@ -23,13 +23,9 @@ int main()
     sort(arr1, arr1 + n);
     sort(arr2, arr2 + n);
 
-    map<int, int> mp1, mp2;
-    rep(i, 0, n) mp1[arr1[i]]++;
-    rep(i, 0, n) mp2[arr2[i]]++;
-
     rep(i, 0, n)
     {
-        if (arr1[i] != arr2[i] or mp1[arr1[i]] != mp2[arr2[i]]) {
+        if (arr1[i] != arr2[i]) {
             cout << "no" << nl;
             ok = false;
             break;
