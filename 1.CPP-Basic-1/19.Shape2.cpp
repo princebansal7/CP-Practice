@@ -6,11 +6,23 @@
 using namespace std;
 #define nl '\n'
 #define ll long long
-#define repn(i, a, b) for (int i = a; i <= b; ++i)
-#define rep(i, a, b) for (int i = a; i < b; ++i)
 
 int main()
 {
+    int n, k = 0;
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n - i; j++) {
+            cout << ' ';
+        }
+        while (k != (2 * i - 1)) {
+            cout << '*';
+            k++;
+        }
+        k = 0;
+        cout << nl;
+    }
 
     return 0;
 }
