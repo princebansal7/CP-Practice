@@ -14,11 +14,5 @@ int main()
     int x;
     cin >> x;
 
-    // Wrong
-
-    if (x & 1)
-        cout << x / 2 << nl;
-    else
-        cout << 1 << nl;
     return 0;
 }
