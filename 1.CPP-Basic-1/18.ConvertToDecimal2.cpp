@@ -22,7 +22,7 @@ string decimalToBinary(int n)
     reverse(ans.begin(), ans.end());
     return ans;
 }
-int powe(int n, int power)
+int pwr(int n, int power)
 {
     int ans;
     for (int i = 1; i <= power; i++) {
@@ -49,7 +49,7 @@ int main()
 
             if (bit == 1) {
                 finalNum += power;
-                power = powe(power, 2);
+                power = pwr(power, 2);
             }
         }
         cout << finalNum << nl;
