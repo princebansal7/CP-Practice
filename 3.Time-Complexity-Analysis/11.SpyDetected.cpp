@@ -14,30 +14,50 @@ int main()
     int tt;
     cin >> tt;
     while (tt--) {
+
         int n;
         cin >> n;
         vector<int> v(n);
-        unordered_map<int, int> mp;
-        rep(i, 0, n)
-        {
-            cin >> v[i];
-            mp[v[i]]++;
+        for (int& val : v) {
+            cin >> val;
         }
-        int val, ans;
-        for (auto x : mp) {
-            if (x.second == 1) {
-                val = x.first;
-                break;
+        vector<int> temp = v;
+        sort(temp.begin(), temp.end());
+        for (int i = 0; i < n; i++) {
+            if (v[i] != temp[1]) {
+                cout << i + 1 << "\n";
             }
         }
-        rep(i, 0, n)
-        {
-            if (val == v[i]) {
-                ans = i;
-                break;
-            }
-        }
-        cout << ans + 1 << nl;
     }
     return 0;
 }
+/*
+WAY-2
+
+            int n;
+            cin >> n;
+            vector<int> v(n);
+            unordered_map<int, int> mp;
+            rep(i, 0, n)
+            {
+                cin >> v[i];
+                mp[v[i]]++;
+            }
+            int val, ans;
+            for (auto x : mp) {
+                if (x.second == 1) {
+                    val = x.first;
+                    break;
+                }
+            }
+            rep(i, 0, n)
+            {
+                if (val == v[i]) {
+                    ans = i;
+                    break;
+                }
+            }
+            cout << ans + 1 << nl;
+
+
+*/
